@@ -16,7 +16,7 @@ class App extends Component {
 				})}>Waltham Vision Care</h1>
 				<Nav />
 				<main>
-					<div id='top' ><Top /></div>
+					<div id='head' ><Top /></div>
 					<div id='about' ><About /></div>
 					<div id='location' ><Location /></div>
 					<div id='contact' ><Contact /></div>

@@ -29,11 +29,11 @@ export default class Contact extends Component {
 					<p>
 						<textarea name="message" ></textarea>
 					</p> */}
-					<input type="text" name="name" placeholder="Name" required />
-					<input type="email" name="email" placeholder="Email" required />
-					<input type="tel" name="phone" placeholder="Phone Number" required />
-					<textarea rows="5" cols="50" name="message" placeholder="Message..."
-						required></textarea>
+					<p><input type="text" name="name" placeholder="Name" required /></p>
+					<p><input type="email" name="email" placeholder="Email" required /></p>
+					<p><input type="tel" name="phone" placeholder="Phone Number" required /></p>
+					<p><textarea rows="5" cols="50" name="message" placeholder="Message..."
+						required></textarea></p>
 					<p>
 						<button type="submit">Send</button>
 					</p>
