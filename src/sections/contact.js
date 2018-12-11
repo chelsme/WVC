@@ -34,9 +34,7 @@ export default class Contact extends Component {
 					<p><input type="tel" name="phone" placeholder="Phone Number" required /></p>
 					<p><textarea rows="5" cols="50" name="message" placeholder="Message..."
 						required></textarea></p>
-					<p>
-						<button type="submit">Send</button>
-					</p>
+					<button type="submit">Send</button>
 				</form>
 
 			</div>

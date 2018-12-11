@@ -203,12 +203,13 @@ form button {
 
 @media screen and (max-width: 450px) {
 	.App {
-		top: 40px;
+		top: 38px;
 	}
 	
 	#nav {
 		position: relative;
 		top: 0;
+		padding: 0;
 	}
 	
 	nav {
@@ -222,6 +223,7 @@ form button {
 	nav button {
 		width: 105px;
 		font-size: 15px;
+		margin: 0;
 	}
 
 	p {
@@ -234,13 +236,9 @@ form button {
 		height: 90%;
 	}
 
-	input, textarea {
+	input, textarea, form button {
 		min-width: 88%;
 		font-size: .8em;
-	}
-
-	form button {
-		width: 88%;
 	}
 
 	footer {
