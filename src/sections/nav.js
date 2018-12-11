@@ -11,17 +11,22 @@ export default class Nav extends Component {
         console.log(nav)
     }
 
+    home = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    }
+
     render() {
         return (
             <div id='nav'>
-                <h1 onClick={() => window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                })}>Waltham Vision Care</h1>
+                <h1 onClick={this.home}>Waltham Vision Care</h1>
                 <nav>
-                    <button onClick={() => this.scroll('about')}>About Us</button>
-                    <button onClick={() => this.scroll('location')}>Find Us</button>
-                    <button onClick={() => this.scroll('contact')}>Contact Us</button>
+                    <p className='navButton' id='topButton' onClick={this.home}>Home</p>
+                    <p className='navButton' onClick={() => this.scroll('about')}>About Us</p>
+                    <p className='navButton' onClick={() => this.scroll('location')}>Find Us</p>
+                    <p className='navButton' onClick={() => this.scroll('contact')}>Contact Us</p>
                 </nav>
             </div>
         )

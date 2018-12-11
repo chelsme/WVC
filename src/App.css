@@ -4,7 +4,7 @@
 	font-size: 1.2em;
 	background-color: #282c34;
 	position: absolute;
-    top: 72px;
+    top: 55px;
 }
 
 .App-header {
@@ -24,36 +24,37 @@ main {
 
 /* ************************** nav ************************** */
 
+#topButton {
+	display: none;
+}
+
 #nav {
-		position: fixed;
-		top: 0;
-		background-color: whitesmoke;
-		width: 100%;
-		z-index: 2;
-		padding: 10px;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		flex-wrap: wrap;
+	position: fixed;
+	top: 0;
+	background-color: whitesmoke;
+	width: 100%;
+	z-index: 2;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 h1 {
 	margin: 0;
 	margin-left: 5px;
 	vertical-align: 'center';
-	/* text-align: left; */
 }
 
 nav {
-	/* position: fixed;
-	top: 0px;
-	right: 10px; */
 	z-index: 3;
 	width: 450px;
 	margin-right: 5px;
+	display: flex;
+	flex-direction: row;
 }
 
-nav button {
+.navButton {
 	width: 130px;
 	padding: 10px;
 	margin: 1%;
@@ -165,7 +166,7 @@ form button {
 
 @media screen and (max-width: 800px) {
 	.App {
-		top: 60px;
+		top: 45px;
 	}
 
 	#nav {
@@ -180,14 +181,18 @@ form button {
 		font-size: 1.6em;
 	}
 
-	nav button {
+	.navButton {
 		padding: 5px;
 	}
 }
 
 @media screen and (max-width: 735px) {
 	.App {
-		top: 100px;
+		top: 80px;
+	}
+	
+	.navButton {
+		margin: 0;
 	}
 
 	#doc {
@@ -199,9 +204,8 @@ form button {
 		font-size: 1.2em;
 	}
 }
-
-
-@media screen and (max-width: 450px) {
+	
+@media screen and (max-width: 570px) {
 	.App {
 		top: 38px;
 	}
@@ -213,17 +217,21 @@ form button {
 	}
 	
 	nav {
+		width: 100%;
 		position: fixed;
 		top: 0;
 		background-color: whitesmoke;
 	}
+
+	#topButton {
+		display: block;
+	}
 }
 
 @media screen and (max-width: 375px) {
-	nav button {
+	.navButton {
 		width: 95px;
 		font-size: 12px;
-		margin: 0;
 	}
 
 	p {
