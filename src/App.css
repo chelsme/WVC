@@ -229,9 +229,13 @@ form button {
 }
 
 @media screen and (max-width: 375px) {
+	.App {
+		top: 28px;
+	}
+	
 	.navButton {
 		width: 95px;
-		font-size: 12px;
+		font-size: 13px;
 	}
 
 	p {
