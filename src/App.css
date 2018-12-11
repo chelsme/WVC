@@ -19,65 +19,80 @@
 }
 
 main {
-	width: 90%;
 	margin: auto;
-}
-
-h1 {
-	position: fixed;
-	top: 0;
-	background-color: whitesmoke;
-	width: 100%;
-	z-index: 2;
-	margin: 0;
-	padding: 10px;
 }
 
 /* ************************** nav ************************** */
 
+#nav {
+		position: fixed;
+		top: 0;
+		background-color: whitesmoke;
+		width: 100%;
+		z-index: 2;
+		padding: 10px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+}
+
+h1 {
+	margin: 0;
+	margin-left: 5px;
+	vertical-align: 'center';
+	/* text-align: left; */
+}
+
 nav {
-	position: fixed;
+	/* position: fixed;
 	top: 0px;
-	right: 10px;
+	right: 10px; */
 	z-index: 3;
+	width: 450px;
+	margin-right: 5px;
 }
 
 nav button {
 	width: 130px;
 	padding: 10px;
-	margin: 15px;
+	margin: 1%;
 	font-size: 20px;
 }
 
 /* ************************** main body ************************** */
 
 #head, #about, #location, #contact {
-	width: 96%;
+	width: 92%;
 	background-color: white;
-	padding: 10px 20px;
+	margin: auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	border-radius: 8px;
 	border: 3px;
 	border-style: groove;
+	padding-bottom: 10px;
+}
+
+h2 {
+	margin-bottom: 10px;
+}
+
+p {
+	padding: 10px;
+	margin: 0;
 }
 
 #top {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	flex-wrap: wrap;
-}
-
-#topWords {
-	flex-basis: 60%;
 }
 
 #doc {
 	max-width: 400px;
 	max-height: 280px;
-	margin: 30px;
-	flex-basis: 40%;
+	margin: 3%;
 }
 
 img {
@@ -100,6 +115,11 @@ h3 {
 	min-width: 250px;
 }
 
+#hours p {
+	margin: 0;
+	padding: 0;
+}
+
 iframe {
 	flex-basis: 60%;
 	width: 600px;
@@ -118,6 +138,10 @@ input, textarea {
 	padding: 10px;
 }
 
+form p {
+	padding: 0;
+}
+
 form button {
 	width: 40%;
 	min-width: 300px;
@@ -127,6 +151,95 @@ form button {
 
 /* ************************** footer ************************** */
 
-footer {
+/* footer {
 	padding: 20px;
+} */
+
+/* ************************** media queries ************************** */
+
+@media screen and (max-width: 1250px) {
+	#top {
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.App {
+		top: 60px;
+	}
+
+	#nav {
+		justify-items: center;
+		margin: auto;
+		justify-content: center;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	h1 {
+		font-size: 1.6em;
+	}
+
+	nav button {
+		padding: 5px;
+	}
+}
+
+@media screen and (max-width: 735px) {
+	.App {
+		top: 100px;
+	}
+
+	#doc {
+		width: 90%;
+		height: 90%;
+	}
+
+	h2 {
+		font-size: 1.2em;
+	}
+}
+
+
+@media screen and (max-width: 450px) {
+	.App {
+		top: 40px;
+	}
+	
+	#nav {
+		position: relative;
+		top: 0;
+	}
+	
+	nav {
+		position: fixed;
+		top: 0;
+		background-color: whitesmoke;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	nav button {
+		width: 100px;
+		font-size: 15px;
+	}
+
+	p {
+		font-size: .8em;
+		padding: 5px;
+	}
+
+	img {
+		width: 90%;
+		height: 90%;
+	}
+
+	input, textarea {
+		min-width: 88%;
+		font-size: .8em;
+	}
+
+	footer {
+		font-size: 14px;
+	}
 }

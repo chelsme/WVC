@@ -10,10 +10,6 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<h1 onClick={() => window.scrollTo({
-					top: 0,
-					behavior: "smooth"
-				})}>Waltham Vision Care</h1>
 				<Nav />
 				<main>
 					<div id='head' ><Top /></div>
