@@ -237,7 +237,7 @@ form button {
 	}
 
 	input, textarea, form button {
-		min-width: 88%;
+		min-width: 85%;
 		font-size: .8em;
 	}
 
