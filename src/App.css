@@ -220,7 +220,7 @@ form button {
 
 @media screen and (max-width: 375px) {
 	nav button {
-		width: 100px;
+		width: 105px;
 		font-size: 15px;
 	}
 
@@ -237,6 +237,10 @@ form button {
 	input, textarea {
 		min-width: 88%;
 		font-size: .8em;
+	}
+
+	form button {
+		width: 88%;
 	}
 
 	footer {
