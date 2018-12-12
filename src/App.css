@@ -80,7 +80,7 @@ h2 {
 }
 
 p {
-	padding: 10px;
+	padding: 10px 20px;
 	margin: 0;
 }
 
@@ -93,7 +93,6 @@ p {
 #doc {
 	max-width: 400px;
 	max-height: 280px;
-	margin: 3%;
 }
 
 img {
